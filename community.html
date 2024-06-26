@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Community - Mentor Bootstrap Template</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- ======= Header ======= -->
+<header id="header" class="fixed-top">
+  <div class="container d-flex align-items-center">
+    <img class="logo me-auto" style="width: 7rem;" src="./assets/img/drn.png" alt="drone">
+
+    <nav id="navbar" class="navbar order-last order-lg-0">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="trainers.html">Trainers</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="diy.html">DIY</a></li>
+        <li><a class="active" href="community.html">Community</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav><!-- .navbar -->
+
+    <a href="courses.html" class="get-started-btn">Get Started</a>
+  </div>
+</header><!-- End Header -->
+
+<main id="main">
+  <div class="breadcrumbs" data-aos="fade-in">
+    <div class="container">
+      <h2>Community</h2>
+      <p>Explore and share your drone projects with our community. Get inspired and inspire others!</p>
+    </div>
+  </div><!-- End Breadcrumbs -->
+
+  <section id="community" class="community">
+    <div class="container" data-aos="fade-up">
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <div class="community-item">
+            <img src="assets/img/10.jpg" class="img-fluid" alt="">
+            <h3>Project 1: Racing Drone</h3>
+            <p>Built for speed and agility, this racing drone is perfect for competitive racing. It features a lightweight frame and powerful motors.</p>
+            <div class="likes-container">Likes: <span id="likes1">81</span></div>
+            <button class="btn btn-primary" onclick="likeProject(1)">Like</button>
+            <button class="btn btn-secondary" onclick="commentProject(1)">Comment</button>
+            <div id="comments1" class="comments-section"></div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
+          <div class="community-item">
+            <img src="assets/img/9.jpg" class="img-fluid" alt="">
+            <h3>Project 2: Photography Drone</h3>
+            <p>Designed for aerial photography, this drone is equipped with a high-resolution camera and stable flight capabilities.</p>
+            <div class="likes-container">Likes: <span id="likes2">43</span></div>
+            <button class="btn btn-primary" onclick="likeProject(2)">Like</button>
+            <button class="btn btn-secondary" onclick="commentProject(2)">Comment</button>
+            <div id="comments2" class="comments-section"></div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
+          <div class="community-item">
+            <img src="assets/img/8.jpg" class="img-fluid" alt="">
+            <h3>Project 3: Delivery Drone</h3>
+            <p>This drone is optimized for carrying small packages. It's ideal for quick and efficient deliveries in urban areas.</p>
+            <div class="likes-container">Likes: <span id="likes3">12</span></div>
+            <button class="btn btn-primary" onclick="likeProject(3)">Like</button>
+            <button class="btn btn-secondary" onclick="commentProject(3)">Comment</button>
+            <div id="comments3" class="comments-section"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-5">
+        <div class="col-lg-4 col-md-6">
+          <div class="community-item">
+            <img src="assets/img/11.jpg" class="img-fluid" alt="">
+            <h3>Project 4: FPV Drone</h3>
+            <p>Experience the thrill of first-person view flying with this FPV drone. It's built for immersive flight experiences.</p>
+            <div class="likes-container">Likes: <span id="likes4">11</span></div>
+            <button class="btn btn-primary" onclick="likeProject(4)">Like</button>
+            <button class="btn btn-secondary" onclick="commentProject(4)">Comment</button>
+            <div id="comments4" class="comments-section"></div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
+          <div class="community-item">
+            <img src="assets/img/12.jpg" class="img-fluid" alt="">
+            <h3>Project 5: Surveillance Drone</h3>
+            <p>Equipped with advanced sensors and cameras, this surveillance drone is perfect for security and monitoring purposes.</p>
+            <div class="likes-container">Likes: <span id="likes5">25</span></div>
+            <button class="btn btn-primary" onclick="likeProject(5)">Like</button>
+            <button class="btn btn-secondary" onclick="commentProject(5)">Comment</button>
+            <div id="comments5" class="comments-section"></div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
+          <div class="community-item">
+            <img src="assets/img/13.jpg" class="img-fluid" alt="">
+            <h3>Project 6: DIY Drone</h3>
+            <p>Build your own custom drone with this DIY project. It allows for endless customization and creativity.</p>
+            <div class="likes-container">Likes: <span id="likes6">70</span></div>
+            <button class="btn btn-primary" onclick="likeProject(6)">Like</button>
+            <button class="btn btn-secondary" onclick="commentProject(6)">Comment</button>
+            <div id="comments6" class="comments-section"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End Community Section -->
+
+</main><!-- End #main -->
+
+<!-- ======= Footer ======= -->
+<footer id="footer">
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-3 col-md-6 footer-contact">
+          <h3>APION</h3>
+          <p>
+            A108 Adam Street <br>
+            New York, NY 535022<br>
+            United States <br><br>
+            <strong>Phone:</strong> +1 5589 55488 55<br>
+            <strong>Email:</strong> info@example.com<br>
+          </p>
+        </div>
+
+        <div class="col-lg-2 col-md-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-6 footer-newsletter">
+          <h4>Join Our Newsletter</h4>
+          <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+          <form action="" method="post">
+            <input type="email" name="email"><input type="submit" value="Subscribe">
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container d-md-flex py-4">
+
+    <div class="me-md-auto text-center text-md-start">
+      <div class="copyright">
+        &copy; Copyright <strong><span>APION</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+      </div>
+    </div>
+    <div class="social-links text-center text-md-right pt-3 pt-md-0">
+      <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+      <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+      <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+      <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+      <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+    </div>
+  </div>
+</footer><!-- End Footer -->
+
+<div id="preloader"></div>
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+<!-- Vendor JS Files -->
+<script src="assets/vendor/purecounter/purecounter.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+
+<!-- Template Main JS File -->
+<script src="assets/js/main.js"></script>
+
+<script>
+  const likes = [81, 43, 12, 11, 25, 70]; // Initial like counts
+
+  function likeProject(index) {
+    likes[index - 1]++;
+    document.getElementById('likes' + index).textContent = likes[index - 1];
+  }
+
+  function commentProject(index) {
+    const comment = prompt('Enter your comment:');
+    if (comment) {
+      const commentsSection = document.getElementById('comments' + index);
+      const commentDiv = document.createElement('div');
+      commentDiv.textContent = comment;
+      commentsSection.appendChild(commentDiv);
+    }
+  }
+</script>
+
+<style>
+  .community-item {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .community-item img {
+    border-radius: 5px;
+  }
+
+  .likes-container {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+
+  .comments-section {
+    margin-top: 10px;
+    text-align: left;
+  }
+
+  .comments-section div {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 5px;
+  }
+</style>
+
+</body>
+
+</html>
